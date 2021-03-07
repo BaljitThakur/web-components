@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        
+<style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Background image */
+            .main-box{
+                background-image: linear-gradient(0deg, #071013 0%, rgba(7, 16, 19, 0.2) 100%),url('images/bg.png');
+                background-size: contain, cover;
+                background-repeat: no-repeat;
+                width:100%;
+                height: 500px;
+                display:flex;
+                justify-content: center;    
+                align-items: center;
+            }
+            
+            /* Text input with search icon */
+            .mainspan{
+                width: 60%;
+            }
+            @media (min-width: 768px){
+                .mainspan{
+                width: 40%;
+            }
+            }
+            /* Text input with search icon */
+            .has-search .form-control {
+                padding-left: 2.375rem;
+                margin-bottom: 0px;
+            }
+            .has-search .form-control-feedback {
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 2.375rem;
+                height: 2.375rem;
+                line-height: 2.375rem;
+                text-align: center;
+                pointer-events: none;
+                color: rgb(255, 255, 255);
+            }
+            #location-icon, #search-icon{
+                position: absolute;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-size: 20px;
+            }
+            /* location dropdown */
+            #select-menu{
+            height: 40px;
+            border-radius: 8px;
+            padding-left: 26px;
+            pointer-events: auto;
+            outline: none !important;
+            }
+            @media (max-width: 767px){
+                #select-menu{
+                margin-left: 10px;
+                width: 120px;
+                border-radius: 20px;
+                }
+                #location-icon{
+                position: absolute;
+                padding-top: 10px;
+                padding-left: 20px;
+                font-size: 20px;
+                }
+            }
+            /* Search bar outer container */
+            #search-bar-box{
+                margin-bottom: 0px;
+                padding:1em;
+            }
+            /* search bar */
+            #search-bar{
+                margin-bottom: 0px;
+                height: 40px;
+                border-radius: 8px;
+                border:none;
+            }
+            @media (max-width: 767px){
+                #search-bar{
+                    margin-right:10px;
+                    border-radius: 20px;
+                    border: none;
+            }
+            }
+            
+             /* cards */
+             #service-box{
+                margin-top: -100px;
+             }
+
+
+            #service-tabs{
+                margin:10px;
+                padding: 10px;
+                height: 180px;
+                width: fit-content;
+                border: none;
+                border-radius:20px;
+                background:rgb(255, 255, 255);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+             }
+             
+             #service-tabs img{
+                height:100%;
+                width: 100%;
+             }
+            
+
+            #overlay-text{
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                
+             }
+             
+            
+
+             
+
+        </style>
+
+    </head>
+    <body>
+        <main>
+            
+                <div class="container-fluid main-box">
+                    
+                    <form > 
+                        <div class="absolute" id="location-icon"><i class="fas fa-map-marker-alt"></i></div>  
+                        <select id="select-menu">  
+                        <option value = "Mumbai">Mumbai  
+                        </option>  
+                        <option value = "others coming soon"> others coming soon    
+                        </option>  
+                        </select>  
+                   </form> 
+                    <div class="mainspan">
+                        <!-- search box -->
+                        <div class="form-group has-search" id="search-bar-box">
+                          <div class="absolute" id="search-icon"><i class="fas fa-search"></i></div>
+                          <input type="text" class="form-control" placeholder=" Search"  id="search-bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="service-box">
+                    <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="col-12 shadow"  id="service-tabs">
+                            <img src="images/tiffin.png">
+                            <span id="overlay-text">
+                                <b>TIFFINS</b><br>
+                                <i style="color: rgb(0, 225, 255)" class="fas fa-arrow-circle-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="col-12 bg-white"  id="service-tabs">
+                            MORE CATEGORIES COMING SOON...
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 w3-hide-small w3-hide-medium">
+                        <div class="col-12"  id="service-tabs">
+                            MORE CATEGORIES COMING SOON...
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 w3-hide-small w3-hide-medium">
+                        <div class="col-12"  id="service-tabs">
+                            MORE CATEGORIES COMING SOON...
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+        </main>
+    </body>
+    <footer style="margin-top:10px; height:100px; background-color: rgb(0, 0, 0);">
+
+    </footer>
+</html>

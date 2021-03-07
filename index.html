@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mapstreak</title>
+
+        <!-- css links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!--JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- css files -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+           
+            
+            .navbar-style{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 5px 10px #efefef;
+                text-transform: uppercase;
+            }
+            #navbar-name{
+                color: #071013;
+                font-weight: 700;
+            }
+            .logo{
+                height:48px;
+                padding: 2px 10px;
+            }
+            .icon-bar{
+                background:#071013 ;
+            }
+            li:hover{
+                background-color: red;
+            }
+            li a{
+                color: #071013;
+               
+            }
+            li a:hover{
+                color:#23B5D3;
+                background-color: none !important;
+            }
+            .btn1{
+                border-radius:8px;                
+                background: linear-gradient(133.41deg, #23B5D3 2.63%, #1D65AD 100%);
+                color:#fffdfd;
+                border:none;
+                width:160px;
+                outline: none !important;
+            }
+            .btn2{
+                border-radius:8px;
+                border: 1px solid #23B5D3;
+                color: #071013;
+                width:160px;
+                outline: none !important;
+              
+            }
+            .btn2:hover{
+                color: #071013;
+            }
+            #btn-area{
+                padding-top: 8px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header class="header" >
+            <nav class="navbar navbar-style">
+                <div class="container">
+                    <div class="navbar-header">
+                        
+                        <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#micon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a href="#"><img src="images/logo.png" class="logo" alt="logo"><b  id="navbar-name">MAPSTREAK</b></a>
+                       
+                    </div>
+                    <div class="collapse navbar-collapse" id="micon">
+                        <ul class="nav  navbar-nav navbar-right text-center">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">CONTACT US</a></li>
+                            <li><a href="">PARTNERSHIP WITH US</a></li>
+                            <li><a href="" id="btn-area"><button class="btn shadow btn1">REGISTER</button></a></li>
+                            <li><a href="" id="btn-area"><button class="btn shadow btn2">LOG IN</button></a></li>
+                         </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+    </body>
+</html>
